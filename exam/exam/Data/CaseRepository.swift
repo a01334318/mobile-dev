@@ -8,10 +8,7 @@
 import Foundation
 
 class Api {
-  static let base = "https://api.api-ninjas.com/v1/covid19?country="
-  struct routes {
-      static let country = "mexico"
-  }
+  static let base = "https://api.api-ninjas.com/v1/covid19?country=mexico"
 }
 
 protocol NetworkAPIProtocol {
@@ -27,6 +24,6 @@ class CaseRepository: NetworkAPIProtocol{
     }
     
     func getCaseList() async -> CaseResponse? {
-        return await nService.getCases(url: URL(string: "\(Api.base)\(Api.routes.country)")!)
+        return await nService.getCases(url: URL(string: "\(Api.base)")!)
     }
 }

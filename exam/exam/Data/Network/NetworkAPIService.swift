@@ -15,25 +15,30 @@ class NetworkAPIService{
     
     
     func getCases(url: URL) async -> CaseResponse? {
-            var request = URLRequest(url: url)
-            request.headers.add(.authorization(bearerToken: apiKey))
-            let taskRequest = AF.request(request).validate()
+        let url = "\(Api.base)"
+
+        let headers: HTTPHeaders = [
+            "X-Api-Key" : "9HW9PlLKXNpnkhBWY2tWSw==2HrZQ3kXsDz9ynxJ",
+        ]
+
+        do {
+            let taskRequest = AF.request(url, method: .get, headers: headers).validate()
             let response = await taskRequest.serializingData().response
+            
             switch response.result {
             case .success(let data):
                 do {
-                    let decoder = JSONDecoder()
-                    decoder.keyDecodingStrategy = .convertFromSnakeCase
-
-                    return try decoder.decode(CaseResponse.self, from: data)
-
+                    let results = try JSONDecoder().decode(CaseResponse.self, from: data)
+                    debugPrint(results)
+                    return results
                 } catch {
-                    debugPrint("Decoding Error: \(error)")
+                    debugPrint(error.localizedDescription)
                     return nil
                 }
-            case .failure(let error):
-                debugPrint("API Request Error: \(error.localizedDescription)")
+            case let .failure(error):
+                debugPrint(error.localizedDescription)
                 return nil
             }
         }
+    }
 }
