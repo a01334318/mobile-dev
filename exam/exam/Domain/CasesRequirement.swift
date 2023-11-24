@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CasesRequirementProtocol{
-    func getCases() async -> CaseResponse?
+    func getCases() async -> [Case]?
 }
 
 class CaseRequirement: CasesRequirementProtocol {
@@ -19,7 +19,7 @@ class CaseRequirement: CasesRequirementProtocol {
         self.dataRepository = dataRepository
     }
     
-    func getCases() async -> CaseResponse? {
+    func getCases() async -> [Case]? {
         return await dataRepository.getCaseList()
     }
 }

@@ -7,23 +7,17 @@
 
 import Foundation
 
-struct Case: Decodable, Identifiable {
-    let id: Int
-    let country: String?
-    let region: String?
-    let cases: [DataPoint]
-}
-
-struct DataPoint: Decodable {
-    let point: String?
-    let data: [Data]
-}
-
-struct Data: Decodable {
+struct Numbers: Codable {
     let total: Int
     let new: Int
 }
 
-struct CaseResponse: Decodable {
+struct Case: Codable {
+    let country: String
+    let region: String
+    let cases: Numbers
+}
+
+struct Response: Codable {
     let results: [Case]
 }

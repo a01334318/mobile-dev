@@ -14,7 +14,7 @@ class NetworkAPIService{
     let apiKey = "9HW9PlLKXNpnkhBWY2tWSw==2HrZQ3kXsDz9ynxJ"
     
     
-    func getCases(url: URL) async -> CaseResponse? {
+    func getCaseList() async -> [Case]? {
         let url = "\(Api.base)"
 
         let headers: HTTPHeaders = [
@@ -28,9 +28,9 @@ class NetworkAPIService{
             switch response.result {
             case .success(let data):
                 do {
-                    let results = try JSONDecoder().decode(CaseResponse.self, from: data)
-                    debugPrint(results)
-                    return results
+                    let countries = try JSONDecoder().decode([Case].self, from: data)
+                    debugPrint(countries)
+                    return countries
                 } catch {
                     debugPrint(error.localizedDescription)
                     return nil
