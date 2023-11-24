@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		036BF2432B0FC22A00840F28 /* examApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF2422B0FC22A00840F28 /* examApp.swift */; };
 		036BF2452B0FC22A00840F28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF2442B0FC22A00840F28 /* ContentView.swift */; };
-		036BF2472B0FC22A00840F28 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF2462B0FC22A00840F28 /* Item.swift */; };
 		036BF2492B0FC22C00840F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036BF2482B0FC22C00840F28 /* Assets.xcassets */; };
 		036BF24D2B0FC22C00840F28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036BF24C2B0FC22C00840F28 /* Preview Assets.xcassets */; };
 		036BF2572B0FC22C00840F28 /* examTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF2562B0FC22C00840F28 /* examTests.swift */; };
@@ -17,6 +16,11 @@
 		036BF2632B0FC22C00840F28 /* examUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF2622B0FC22C00840F28 /* examUITestsLaunchTests.swift */; };
 		036BF2712B0FC27400840F28 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 036BF2702B0FC27400840F28 /* Alamofire */; };
 		036BF2742B0FC27F00840F28 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 036BF2732B0FC27F00840F28 /* SDWebImageSwiftUI */; };
+		036BF2812B0FCD1C00840F28 /* NetworkAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF2802B0FCD1C00840F28 /* NetworkAPIService.swift */; };
+		036BF2872B0FD3A500840F28 /* CasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF2862B0FD3A500840F28 /* CasesViewModel.swift */; };
+		036BF2892B0FD48A00840F28 /* CasesRequirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF2882B0FD48A00840F28 /* CasesRequirement.swift */; };
+		036BF28B2B0FD53F00840F28 /* CaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF28A2B0FD53F00840F28 /* CaseRepository.swift */; };
+		036BF28D2B0FD63D00840F28 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036BF28C2B0FD63D00840F28 /* Case.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +44,6 @@
 		036BF23F2B0FC22A00840F28 /* exam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036BF2422B0FC22A00840F28 /* examApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examApp.swift; sourceTree = "<group>"; };
 		036BF2442B0FC22A00840F28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		036BF2462B0FC22A00840F28 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		036BF2482B0FC22C00840F28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		036BF24A2B0FC22C00840F28 /* exam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = exam.entitlements; sourceTree = "<group>"; };
 		036BF24C2B0FC22C00840F28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,6 +52,11 @@
 		036BF25C2B0FC22C00840F28 /* examUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = examUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		036BF2602B0FC22C00840F28 /* examUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examUITests.swift; sourceTree = "<group>"; };
 		036BF2622B0FC22C00840F28 /* examUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		036BF2802B0FCD1C00840F28 /* NetworkAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPIService.swift; sourceTree = "<group>"; };
+		036BF2862B0FD3A500840F28 /* CasesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesViewModel.swift; sourceTree = "<group>"; };
+		036BF2882B0FD48A00840F28 /* CasesRequirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesRequirement.swift; sourceTree = "<group>"; };
+		036BF28A2B0FD53F00840F28 /* CaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseRepository.swift; sourceTree = "<group>"; };
+		036BF28C2B0FD63D00840F28 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +113,6 @@
 				036BF2762B0FC2D500840F28 /* Framework */,
 				036BF2752B0FC2B400840F28 /* Domain */,
 				036BF2422B0FC22A00840F28 /* examApp.swift */,
-				036BF2442B0FC22A00840F28 /* ContentView.swift */,
-				036BF2462B0FC22A00840F28 /* Item.swift */,
 				036BF2482B0FC22C00840F28 /* Assets.xcassets */,
 				036BF24A2B0FC22C00840F28 /* exam.entitlements */,
 				036BF24B2B0FC22C00840F28 /* Preview Content */,
@@ -142,6 +148,7 @@
 		036BF2752B0FC2B400840F28 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				036BF2882B0FD48A00840F28 /* CasesRequirement.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -149,6 +156,8 @@
 		036BF2762B0FC2D500840F28 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				036BF2852B0FD38700840F28 /* ViewModels */,
+				036BF2842B0FD24F00840F28 /* View */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -158,6 +167,7 @@
 			children = (
 				036BF2792B0FC49500840F28 /* Models */,
 				036BF2782B0FC2FE00840F28 /* Network */,
+				036BF28A2B0FD53F00840F28 /* CaseRepository.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -165,6 +175,7 @@
 		036BF2782B0FC2FE00840F28 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				036BF2802B0FCD1C00840F28 /* NetworkAPIService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -172,8 +183,25 @@
 		036BF2792B0FC49500840F28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				036BF28C2B0FD63D00840F28 /* Case.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		036BF2842B0FD24F00840F28 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				036BF2442B0FC22A00840F28 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		036BF2852B0FD38700840F28 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				036BF2862B0FD3A500840F28 /* CasesViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,8 +343,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				036BF2452B0FC22A00840F28 /* ContentView.swift in Sources */,
-				036BF2472B0FC22A00840F28 /* Item.swift in Sources */,
+				036BF28D2B0FD63D00840F28 /* Case.swift in Sources */,
+				036BF28B2B0FD53F00840F28 /* CaseRepository.swift in Sources */,
+				036BF2872B0FD3A500840F28 /* CasesViewModel.swift in Sources */,
 				036BF2432B0FC22A00840F28 /* examApp.swift in Sources */,
+				036BF2812B0FCD1C00840F28 /* NetworkAPIService.swift in Sources */,
+				036BF2892B0FD48A00840F28 /* CasesRequirement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
